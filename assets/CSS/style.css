@@ -9,6 +9,9 @@
     --black-color: #000000;
     --white-color: #ffffff;
     --grey-color: #C4C4C4;
+    --pink-color-grad: #eddebf62;
+    --burgundy-color-grad: #89000976;
+    --blue-light-grad: #19587D;
 }
 
 * {
@@ -72,11 +75,109 @@ ul a:hover {
     background-position: top center;
     background-repeat: no-repeat;
     background-color: var(--dark-brown-color);
+    background-size: cover;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+#hero .title {
+    margin: 20px 0;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 22px;
+    padding: 10px 40px;
+    margin-top: 10px;
+    background: linear-gradient(
+        80deg, var(--pink-color-grad), var(--burgundy-color-grad)
+    );
+    box-shadow: var(--black-color) 5px 5px 60px;
+}
+
+#hero .fleche {
+    display: block;
+    margin: 0 auto;
+    margin-top: 285px;
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+
+.scroll .social {
+    margin-top: 15px;
 }
 
 /* Design de la section batman-personnages */
 
+#batman-cinema, 
+#batman-adversaires, 
+#batman-allies,
+#batman-justice-league {
+    margin-top: 60px;
+}
+
 .batman-personnages {
     display: flex;
     justify-content: space-between;
+}
+
+#batman-cinema .title, 
+#batman-adversaires .title, 
+#batman-allies .title,
+#batman-justice-league .title {
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#batman-cinema .description, 
+#batman-adversaires .description, 
+#batman-allies .description,
+#batman-justice-league .description {
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+}
+
+#batman-cinema .personnage-info, 
+#batman-adversaires .personnage-info, 
+#batman-allies .personnage-info,
+#batman-justice-league .personnage-info {
+    text-align: center;
+}
+
+/* Design de la partie MULTIMEDIA */
+
+#multimedia .slider-multimedia {
+    display: flex;
+    width: 60%;
+    margin: 40px auto;
+}
+
+#multimedia .slider-image {
+    width: 100%;
+}
+
+#multimedia .slider-content {
+    padding: 15px;
+    background-color: var(--grey-color);
+}
+
+#multimedia p {
+    font-size: 14px;
 }
